@@ -1,0 +1,7 @@
+{
+  "name": "ionic-traincontroll",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
