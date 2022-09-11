@@ -5,7 +5,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
-const config: SocketIoConfig = { url: 'http://192.168.178.22:3033', options: {} };
+
+const config: SocketIoConfig = { url: 'http://192.168.178.100:3033/', options: {} };
 
 @NgModule({
   declarations: [AppComponent],

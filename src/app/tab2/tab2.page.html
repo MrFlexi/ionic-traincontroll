@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Lok Liste
+      Drive
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,8 +18,8 @@
                   <ion-img src={{item.image_url}}></ion-img>
                 </ion-thumbnail>
                 <ion-label>{{item.name}}</ion-label>
-                <ion-button fill="outline" slot="Start">Zurück</ion-button>
-                <ion-button fill="outline" slot="end">Vor</ion-button>
+                <ion-label>{{item.addr}}</ion-label>
+                
               </ion-item>
 
               <ion-card-content>
@@ -28,7 +28,11 @@
                   <ion-icon size="small" slot="start" name="sunny"></ion-icon>
                   <ion-icon slot="end" name="sunny"></ion-icon>
                 </ion-range>
-              </ion-card-content>
+                <ion-button fill="outline" slot="start"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+                <ion-button fill="outline" slot="center">Stopp</ion-button>
+                <ion-button fill="outline" slot="end"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+        
+                </ion-card-content>
             </ion-card>
           </ion-slide>
         </ion-slides>
