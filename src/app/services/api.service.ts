@@ -24,11 +24,17 @@ export class API {
   getMessages() {
     let observable = new Observable(observer => {
       this.socket.on('initialisation', (data) => {
+        this.showToast("Socket IO: Init");
         observer.next(data);
       });
 
-      this.socket.on('loklist_data', (data) => {
+      this.socket.on('LokList_data', (data) => {
+        this.showToast("Socket IO: LockList");
         observer.next(data);
+      });
+
+      this.socket.on('connect', (data) => {
+        this.showToast("Socket IO: connected");
       });
 
     })
